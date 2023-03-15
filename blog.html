@@ -5,8 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog-Page</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>  
-        <h1>This is blog here</h1>
+    <header class="h-16 flex items-center shadow-sm bg-gradient-to-r bg-purple-800 from-rose-400 p-2 text-white">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+          <div class="text-zinc-800 font-bold uppercase">
+            <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+            <p class="text-[10px] font-normal capitalize -mt-1 text-white">
+              Get ready to Quiz and be amazed!
+            </p>
+          </div>
+            <p class="">Question & Answers</p>
+        </nav>
+      </header>
+      <main class="">
+            <div class="container mx-auto mx-4 mt-4">
+                <!-- find filter map forEach -->
+                <p>01. Difference Between Map, Filter, Foreach, Find. </p>
+                <div class="mx-4 grid grid-cols-4 gap-4 mt-4">
+                    <div class="rounded border p-4">
+                        <p class="bg-slate-100 text-black px-8">Map</p>
+                        <div class="px-4">
+                            <p class="border-b-2 mt-4">Defination:</p>
+                             <p class="mt-2">   
+                                The map() method allows you to iterate over an array and modify its
+                                element using callback function. The callback function will then be executed
+                                on each of the array's elements;</p>
+                        </div>
+                        
+                    </div>
+                    <div class="rounded border p-4">
+                        <p class="bg-slate-100 text-black px-8">Filter</p>
+                        <div class="px-4">
+                            <p class="border-b-2 mt-4">Defination:</p>
+                             <p class="mt-2">   
+                                Filter() method;
+                                We can use the array.filter() methood to find the element in array that meets
+                                a certain condition.</p>
+                        </div>
+                     
+                    </div>
+                    <div class="rounded border p-4">
+                        <p class="bg-slate-100 text-black px-8">Find</p>
+                        <div class="px-4">
+                            <p class="border-b-2 mt-4">Defination:</p>
+                             <p class="mt-2">   
+                                The find() method to find the first element that meets a certain condition. just like a filter methood, it takes a callback as an argument and return the first element that  meets the callback condition</p>
+                        </div>
+                      
+                    </div>
+                    <div class=" rounded border  p-4">
+                        <p class="bg-slate-100 text-black px-8">For-each</p>
+                        <div class="px-4">
+                            <p class="border-b-2 mt-4">Defination:</p>
+                             <p class="mt-2">   
+                                Description. The forEach() method is an iterative method. It calls a provided callbackFn function once for each element in an array in ascending-index order. Unlike map() , forEach() always returns undefined and is not chainable.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--  local storage session storage & cookies storage -->
+                <p class="mt-4">02. Difference Between localStorage, sessionStorage & cookies</p>
+                <div class="mx-4 grid grid-cols-3 gap-4 mt-4">
+                    <div class="rounded border p-4">
+                        <p class="bg-slate-100 text-black px-8">Local Storage</p>
+                        <div class="px-4">
+                            <p class="border-b-2 mt-4">Defination:</p>
+                             <p class="mt-2">   
+                                localStorage is similar to sessionStorage, except that while localStorage data has no expiration time, sessionStorage data gets cleared when the page session ends — that is, when the page is closed. localStorage data for a document loaded in a "private browsing" or "incognito" session is cleared when the last "private" tab is closed.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="rounded border p-4">
+                        <p class="bg-slate-100 text-black px-8">Session Storage</p>
+                        <div class="px-4">
+                            <p class="border-b-2 mt-4">Defination:</p>
+                             <p class="mt-2">   
+                                Session storage allows you to store data in the browser depending on the system memory and the data stored in the browser until the browser is closed. In other words, closing the browser will clear all the data stored in session storage.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="rounded border p-4">
+                        <p class="bg-slate-100 text-black px-8">Cookies Storage</p>
+                        <div class="px-4">
+                            <p class="border-b-2 mt-4">Defination:</p>
+                             <p class="mt-2">   
+                                web browser will store it locally to remember the “name-value pair” that identifies you. If a user returns to that site in the future, the web browser returns that data to the web server in the form of a cookie</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                 <!-- Event Loop  -->
+                <p class="mt-4">03. What is Event Loop?</p>
+                <p class="mt-4">Definition:</p>
+                <p class="mt-2">JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.</p>
+                <p class="text-center text-3xl text-green-400">Event Loop Flow Chart</p>
+                <img class="mt-4 w-80 mx-auto" src="./image/eventLoop.png" alt="">
+
+            </div>
+      </main>
 </body>
 </html>
