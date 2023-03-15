@@ -12,7 +12,12 @@ let submitContainer = document.querySelector("#submitContainer");
 let quizContainer = document.querySelector("#quizContainer");
 let answersContainer = document.querySelector("#answersContainer");
 let displayResult = document.querySelector("#displayResult");
+let displayBlogButton = document.querySelector("#blogButton")
 
+//display Blog
+displayBlogButton.addEventListener('click', ()=>{
+  window.location.href=`/blog.html`
+})
 // EventListener for quiz start button
 startQuiz.addEventListener("click", () => {
   let countDown = document.querySelector("#countDownContainer");
